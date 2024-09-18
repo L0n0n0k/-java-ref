@@ -44,4 +44,14 @@ public class HelloJava {
         // Return the reversed sentence
         return s;
     }
+    public static void main(String... args) {
+        HelloJava reverser = new HelloJava();
+        String s = "i like this program very much";
+        String[] words = s.split("\\s");
+
+        words = reverser.reverse(words);
+
+        s = String.join(" ", words);
+
+        System.out.println(s);
 }
